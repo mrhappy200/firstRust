@@ -7,6 +7,11 @@ use chrono_tz::Europe::{Dublin, Amsterdam};
 //random
 use rand::{self, Rng};
 
+//gui
+use fltk::{app, button::Button, frame::Frame, prelude::*, window::Window};
+
+
+
 fn main() {
     // Gets Dutch time
     let dt = Utc::now().with_timezone(&Amsterdam);
@@ -25,17 +30,22 @@ fn main() {
     let duration = ie_date.signed_duration_since(dt);
 
     // converts the duration to human readable format
-    let duration_hours = duration.num_hours();
-    let duration_days = duration.num_days();
-    let duration_correct_hours = duration_hours - (duration_days * 24);
+    while true {
+        let duration_days = duration.num_days();
+        let duration_hours = duration.num_hours();
+        let duration_correct_hours = duration_hours - (duration_days * 24);
+        let duration_minutes = duration.num_minutes();
+        let duration_correct_minutes = duration_minutes - (duration_hours * 60);
+    }
 
     //Prints Dutch and Irish time
-    println!("Dutch time: {}\n
+    let output = format!("Dutch time: {}\n
     Irish time: {}\n
-    Time till Ireland: {} Days and {} Hours\n
-    Message: {}\n
-    Debug: {}", 
-    dt_format, dt_ie_format, duration_days, duration_correct_hours, message(&duration), duration);
+    Time till Ireland: {} Days, {} Hours and {} Minutes\n
+    Message: {}\n", 
+    dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, message(&duration));
+    println!("{}", &output);
+    window(&output);
 }
 
 fn message(duration: &Duration) -> &'static str {
@@ -57,4 +67,21 @@ fn message(duration: &Duration) -> &'static str {
     else {
         exit(1);
     }
+}
+
+fn window(out: &str) {
+    let app = app::App::default();
+    let mut wind = Window::default()
+        .with_size(500, 600)
+        .center_screen()
+        .with_label("Counter");
+    let mut frame = Frame::default()
+        .with_size(100, 40)
+        .center_of(&wind)
+        .with_label(out);
+    wind.make_resizable(true);
+    wind.end();
+    wind.show();
+    /* Event handling */
+    app.run().unwrap();
 }
