@@ -1,0 +1,23 @@
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+
+make: warning: -j16 forced in submake: resetting jobserver mode.
+In file included from /usr/include/string.h:495,
+                 from /workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/fltk/FL/Fl.H:47,
+                 from /workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/fltk/FL/Fl_Widget.H:24,
+                 from /workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/include/cfl_widget.hpp:4,
+                 from /workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/src/cfl_tree.cpp:3:
+In function ‘char* strncpy(char*, const char*, size_t)’,
+    inlined from ‘int Fl_Tree_item_pathname(const Fl_Tree*, char*, int, const Fl_Tree_Item*)’ at /workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/src/cfl_tree.cpp:591:5:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:34: warning: ‘char* __builtin_strncpy(char*, const char*, long unsigned int)’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/src/cfl_tree.cpp:2:
+/workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/src/cfl_tree.cpp: In function ‘int Fl_Tree_item_pathname(const Fl_Tree*, char*, int, const Fl_Tree_Item*)’:
+/workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/src/cfl_tree.cpp:592:31: note: length computed here
+  592 |          if (ret == 0) strncpy(pathname, temp, strlen(temp)););
+      |                        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-1.3.5/cfltk/include/cfl_lock.h:14:5: note: in definition of macro ‘LOCK’
+   14 |     x;                                                                                             \
+      |     ^

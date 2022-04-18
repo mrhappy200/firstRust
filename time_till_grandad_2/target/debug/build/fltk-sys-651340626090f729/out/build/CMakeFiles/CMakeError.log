@@ -1,0 +1,190 @@
+Determining if files alsa/asoundlib.h exist failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_58aca/fast && /usr/bin/make  -f CMakeFiles/cmTC_58aca.dir/build.make CMakeFiles/cmTC_58aca.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58aca.dir/HAVE_ALSA_ASOUNDLIB_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -o CMakeFiles/cmTC_58aca.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -c /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_ALSA_ASOUNDLIB_H.c
+/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_ALSA_ASOUNDLIB_H.c:2:10: fatal error: alsa/asoundlib.h: No such file or directory
+    2 | #include <alsa/asoundlib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_58aca.dir/build.make:78: CMakeFiles/cmTC_58aca.dir/HAVE_ALSA_ASOUNDLIB_H.c.o] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_58aca/fast] Error 2
+
+
+Source:
+/* */
+#include <alsa/asoundlib.h>
+
+
+int main(void){return 0;}
+
+Determining if files GL/glu.h exist failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e9805/fast && /usr/bin/make  -f CMakeFiles/cmTC_e9805.dir/build.make CMakeFiles/cmTC_e9805.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9805.dir/HAVE_GL_GLU_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -o CMakeFiles/cmTC_e9805.dir/HAVE_GL_GLU_H.c.o -c /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_GL_GLU_H.c
+/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_GL_GLU_H.c:2:10: fatal error: GL/glu.h: No such file or directory
+    2 | #include <GL/glu.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e9805.dir/build.make:78: CMakeFiles/cmTC_e9805.dir/HAVE_GL_GLU_H.c.o] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_e9805/fast] Error 2
+
+
+Source:
+/* */
+#include <GL/glu.h>
+
+
+int main(void){return 0;}
+
+Determining if files OpenGL/glu.h exist failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c8395/fast && /usr/bin/make  -f CMakeFiles/cmTC_c8395.dir/build.make CMakeFiles/cmTC_c8395.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8395.dir/HAVE_OPENGL_GLU_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -o CMakeFiles/cmTC_c8395.dir/HAVE_OPENGL_GLU_H.c.o -c /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_OPENGL_GLU_H.c
+/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_OPENGL_GLU_H.c:2:10: fatal error: OpenGL/glu.h: No such file or directory
+    2 | #include <OpenGL/glu.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_c8395.dir/build.make:78: CMakeFiles/cmTC_c8395.dir/HAVE_OPENGL_GLU_H.c.o] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_c8395/fast] Error 2
+
+
+Source:
+/* */
+#include <OpenGL/glu.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/stdtypes.h exist failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_33b7b/fast && /usr/bin/make  -f CMakeFiles/cmTC_33b7b.dir/build.make CMakeFiles/cmTC_33b7b.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33b7b.dir/HAVE_SYS_STDTYPES_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -o CMakeFiles/cmTC_33b7b.dir/HAVE_SYS_STDTYPES_H.c.o -c /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STDTYPES_H.c
+/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STDTYPES_H.c:2:10: fatal error: sys/stdtypes.h: No such file or directory
+    2 | #include <sys/stdtypes.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_33b7b.dir/build.make:78: CMakeFiles/cmTC_33b7b.dir/HAVE_SYS_STDTYPES_H.c.o] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_33b7b/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/stdtypes.h>
+
+
+int main(void){return 0;}
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5fdf0/fast && /usr/bin/make  -f CMakeFiles/cmTC_5fdf0.dir/build.make CMakeFiles/cmTC_5fdf0.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5fdf0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=strlcat -o CMakeFiles/cmTC_5fdf0.dir/CheckFunctionExists.c.o -c /home/linuxbrew/.linuxbrew/Cellar/cmake/3.22.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5fdf0
+/home/linuxbrew/.linuxbrew/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fdf0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=strlcat -rdynamic CMakeFiles/cmTC_5fdf0.dir/CheckFunctionExists.c.o -o cmTC_5fdf0 
+/usr/bin/ld: CMakeFiles/cmTC_5fdf0.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.main+0x14): undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5fdf0.dir/build.make:99: cmTC_5fdf0] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_5fdf0/fast] Error 2
+
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eb4a4/fast && /usr/bin/make  -f CMakeFiles/cmTC_eb4a4.dir/build.make CMakeFiles/cmTC_eb4a4.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb4a4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=strlcpy -o CMakeFiles/cmTC_eb4a4.dir/CheckFunctionExists.c.o -c /home/linuxbrew/.linuxbrew/Cellar/cmake/3.22.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eb4a4
+/home/linuxbrew/.linuxbrew/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb4a4.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=strlcpy -rdynamic CMakeFiles/cmTC_eb4a4.dir/CheckFunctionExists.c.o -o cmTC_eb4a4 
+/usr/bin/ld: CMakeFiles/cmTC_eb4a4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.main+0x14): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_eb4a4.dir/build.make:99: cmTC_eb4a4] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_eb4a4/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3f44b/fast && /usr/bin/make  -f CMakeFiles/cmTC_3f44b.dir/build.make CMakeFiles/cmTC_3f44b.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f44b.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -ffunction-sections -fdata-sections -fPIC -m64  -o CMakeFiles/cmTC_3f44b.dir/src.c.o -c /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3f44b
+/home/linuxbrew/.linuxbrew/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f44b.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  -rdynamic CMakeFiles/cmTC_3f44b.dir/src.c.o -o cmTC_3f44b 
+/usr/bin/ld: CMakeFiles/cmTC_3f44b.dir/src.c.o: in function `main':
+src.c:(.text.main+0x34): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text.main+0x40): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text.main+0x4c): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text.main+0x5d): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3f44b.dir/build.make:99: cmTC_3f44b] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_3f44b/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5e304/fast && /usr/bin/make  -f CMakeFiles/cmTC_5e304.dir/build.make CMakeFiles/cmTC_5e304.dir/build
+make[1]: Entering directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e304.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_5e304.dir/CheckFunctionExists.c.o -c /home/linuxbrew/.linuxbrew/Cellar/cmake/3.22.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5e304
+/home/linuxbrew/.linuxbrew/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e304.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_5e304.dir/CheckFunctionExists.c.o -o cmTC_5e304  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5e304.dir/build.make:99: cmTC_5e304] Error 1
+make[1]: Leaving directory '/workspace/firstRust/time_till_grandad_2/target/debug/build/fltk-sys-651340626090f729/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_5e304/fast] Error 2
+
+
+
