@@ -9,12 +9,12 @@ use rand::{self, Rng};
 
 //gui
 use fltk::{app,frame::Frame, prelude::*, window::Window};
-
+use fltk_theme::{WidgetScheme, SchemeType, WidgetTheme, ThemeType};
 
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let message = message(&duration());
-    let app = app::App::default();
+    let app = app::App::default().with_scheme(app::Scheme::Gtk);
     let mut wind = Window::default().with_size(500, 250).with_label("Counter");
     wind.make_resizable(true);
     let mut frame = Frame::default()
@@ -23,6 +23,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .with_label(&time_message_tick(message));
 
     println!("{}", &time_message_tick(message));
+    //themes
+    let widget_theme = WidgetTheme::new(ThemeType::Metro);
+    let widget_scheme = WidgetScheme::new(SchemeType::Fluent);
+    widget_theme.apply();
+    widget_scheme.apply();
+
     wind.end();
     wind.show();
 
@@ -33,6 +39,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     Ok(())
 }
+
+
 
 fn message(duration: &Duration) -> &'static str {
     let there_message = ["You are there, have fun!", "Why don't you go on a walk", "Show John this program", "Stop staring at your computer", "Did you buy those shoes"];
