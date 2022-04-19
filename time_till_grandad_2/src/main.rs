@@ -15,7 +15,8 @@ use fltk::{app,frame::Frame, prelude::*, window::Window};
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let message = message(&duration());
     let app = app::App::default();
-    let mut wind = Window::default().with_size(400, 400).with_label("Counter");
+    let mut wind = Window::default().with_size(500, 250).with_label("Counter");
+    wind.make_resizable(true);
     let mut frame = Frame::default()
         .with_size(200, 300)
         .center_of(&wind)
