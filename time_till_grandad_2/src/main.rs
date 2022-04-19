@@ -9,12 +9,12 @@ use rand::{self, Rng};
 
 //gui
 use fltk::{app,frame::Frame, prelude::*, window::Window};
-
+use fltk_theme::{WidgetScheme, SchemeType, WidgetTheme, ThemeType};
 
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let message = message(&duration());
-    let app = app::App::default();
+    let app = app::App::default().with_scheme(app::Scheme::Gtk);
     let mut wind = Window::default().with_size(500, 250).with_label("Counter");
     wind.make_resizable(true);
     let mut frame = Frame::default()
@@ -23,6 +23,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .with_label(&time_message_tick(message));
 
     println!("{}", &time_message_tick(message));
+    //themes
+    let widget_theme = WidgetTheme::new(ThemeType::Metro);
+    let widget_scheme = WidgetScheme::new(SchemeType::Fluent);
+    widget_theme.apply();
+    widget_scheme.apply();
+
     wind.end();
     wind.show();
 
@@ -34,19 +40,31 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
+
+
 fn message(duration: &Duration) -> &'static str {
+    let there_message = ["You are there, have fun!", "Why don't you go on a walk", "Show John this program", "Stop staring at your computer", "Did you buy those shoes"];
+    let hour_message = ["LESS THAN AN HOUR", "You have proberbly already left!", "Ik heb een poootje met vet al op taaafeeel gezet!", "Why don't you call grandad", "Have fun in Ireland"];
     let day_message = ["LESS THAN A DAY!!!", "SOOO close less than 24 hours", "You must burst of excitement!", "We can start counting down the seconds!"];
     let week_message = ["Less that a week left start packing", "The excitement is real", "Dont forget to buy some new shoes before you go!", "OOOOH Less that a week left"];
     let month_message = ["Less than a month!", "Only a few more weeks", "Getting really close", "Getting excited? Proberbly because we are really close!"];
-    if duration.num_hours() < 25 {
+    if duration.num_days() <= 0 {
+        let out = there_message[rand::thread_rng().gen_range(0..there_message.len())];
+        out
+    }
+    else if duration.num_hours() <= 1 {
+        let out = hour_message[rand::thread_rng().gen_range(0..hour_message.len())];
+        out
+    }
+    else if duration.num_days() <= 1 {
         let out = day_message[rand::thread_rng().gen_range(0..day_message.len())];
         out 
     }
-    else if duration.num_days() < 8 {
+    else if duration.num_weeks() <= 1 {
         let out = week_message[rand::thread_rng().gen_range(0..week_message.len())];
         out
     }
-    else if duration.num_days() < 30 {
+    else if duration.num_weeks() <= 4 {
         let out = month_message[rand::thread_rng().gen_range(0..month_message.len())];
         out
     }
@@ -54,7 +72,6 @@ fn message(duration: &Duration) -> &'static str {
         exit(1);
     }
 }
-
 fn duration() -> Duration {
     let dt = Utc::now().with_timezone(&Amsterdam);
     let ie_date = Utc.timestamp(1650781800, 0).with_timezone(&Amsterdam);

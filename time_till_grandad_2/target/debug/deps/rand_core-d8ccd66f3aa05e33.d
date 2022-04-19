@@ -1,0 +1,12 @@
+/home/mrhappy200/projects/firstRust/time_till_grandad_2/target/debug/deps/rand_core-d8ccd66f3aa05e33.rmeta: /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs
+
+/home/mrhappy200/projects/firstRust/time_till_grandad_2/target/debug/deps/librand_core-d8ccd66f3aa05e33.rlib: /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs
+
+/home/mrhappy200/projects/firstRust/time_till_grandad_2/target/debug/deps/rand_core-d8ccd66f3aa05e33.d: /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs /home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs
+
+/home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs:
+/home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs:
+/home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs:
+/home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs:
+/home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs:
+/home/mrhappy200/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs:
