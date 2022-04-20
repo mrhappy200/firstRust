@@ -1,4 +1,5 @@
 use std::process::exit;
+use std::env;
 
 // Adds a bunch of time modules
 use chrono::{prelude::*, Duration};
@@ -107,11 +108,23 @@ fn time_message_tick(message_cache: &str) -> String {
     
 
         //Prints Dutch and Irish time
-        let output = format!("Dutch time: {}\n
-        Irish time: {}\n
-        Time till Ireland: {} Days, {} Hours and {} Minutes\n
-        time since last second:{}\n
-        Message: {}\n", 
-        dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, time_since_second, message_cache);
-        output
+        let args: Vec<String> = env::args().collect();
+        let debug = &args[args.len() - 1];
+        if debug == "--debug" {
+            let output = format!("Dutch time: {}\n
+            Irish time: {}\n
+            Time till Ireland: {} Days, {} Hours and {} Minutes\n
+            time since last second:{}\n
+            Message: {}\n",
+            dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, time_since_second, message_cache);
+            output
+        }
+        else {
+            let output = format!("Dutch time: {}\n
+            Irish time: {}\n
+            Time till Ireland: {} Days, {} Hours and {} Minutes\n
+            Message: {}\n", 
+            dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, message_cache);
+            output
+        }
 }
