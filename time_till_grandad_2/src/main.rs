@@ -14,7 +14,17 @@ use fltk_theme::{WidgetScheme, SchemeType, WidgetTheme, ThemeType};
 
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
+    //does a bunch on gui stuff
     let message = message(&duration());
+
+    //gets arguments
+    let args: Vec<String> = env::args().collect();
+    let debug = &args[args.len() - 1];
+    if debug == "--debug" {
+        println!("{}", &time_message_tick(message));
+    }
+    else {}
+
     let app = app::App::default().with_scheme(app::Scheme::Gtk);
     let mut wind = Window::default().with_size(500, 250).with_label("Counter");
     wind.make_resizable(true);
@@ -23,7 +33,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .center_of(&wind)
         .with_label(&time_message_tick(message));
 
-    println!("{}", &time_message_tick(message));
     //themes
     let widget_theme = WidgetTheme::new(ThemeType::Metro);
     let widget_scheme = WidgetScheme::new(SchemeType::Fluent);
@@ -42,8 +51,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 }
 
 
-
+// picks random message to display from array based on duration
 fn message(duration: &Duration) -> &'static str {
+    let left_message = ["I hope you enjoyed being in ireland", "It is sad to be back home", "At least you get to see your friends again", "At least you get to do O&O again"];
     let there_message = ["You are there, have fun!", "Why don't you go on a walk", "Show John this program", "Stop staring at your computer", "Did you buy those shoes"];
     let hour_message = ["LESS THAN AN HOUR", "You have proberbly already left!", "Ik heb een poootje met vet al op taaafeeel gezet!", "Why don't you call grandad", "Have fun in Ireland"];
     let day_message = ["LESS THAN A DAY!!!", "SOOO close less than 24 hours", "You must burst of excitement!", "We can start counting down the seconds!"];
@@ -73,6 +83,8 @@ fn message(duration: &Duration) -> &'static str {
         exit(1);
     }
 }
+
+// gets duration between current time and time we are going to ireland (extra)
 fn duration() -> Duration {
     let dt = Utc::now().with_timezone(&Amsterdam);
     let ie_date = Utc.timestamp(1650781800, 0).with_timezone(&Amsterdam);
@@ -92,7 +104,6 @@ fn time_message_tick(message_cache: &str) -> String {
         // Formats Dutch and Irish time to fancy output
         let dt_format = dt.format("%v %r (%Z)").to_string();
         let dt_ie_format = dt_ie.format("%v %r (%Z)").to_string();
-        let time_since_second = dt.format("%f").to_string();
     
         // finds time difference in Dutch time between the current date and the date we are going to grandad
         //let duration = dt.signed_duration_since(ie_date); // returns negative values
@@ -105,26 +116,32 @@ fn time_message_tick(message_cache: &str) -> String {
         let duration_correct_hours = duration_hours - (duration_days * 24);
         let duration_minutes = duration.num_minutes();
         let duration_correct_minutes = duration_minutes - (duration_hours * 60);
+        let duration_seconds:f64 = (duration.num_milliseconds()) as f64 / 1000.000000000;
+        let duration_correct_seconds = duration_seconds - (duration_minutes * 60) as f64;
     
-
-        //Prints Dutch and Irish time
+        //gets arguments
         let args: Vec<String> = env::args().collect();
         let debug = &args[args.len() - 1];
+
+        // check for debug argument and if found prints alternative message
         if debug == "--debug" {
-            let output = format!("Dutch time: {}\n
+            let output = format!("
+            Dutch time: {}\n
             Irish time: {}\n
-            Time till Ireland: {} Days, {} Hours and {} Minutes\n
-            time since last second:{}\n
-            Message: {}\n",
-            dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, time_since_second, message_cache);
+            Time till Ireland: {} Days, {} Hours, {} Minutes and {:.3} seconds\n
+            Message: {}\n
+            DEBUG:\n
+            dateTime: {}\n",
+            dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, duration_correct_seconds, message_cache, dt,);
             output
         }
         else {
-            let output = format!("Dutch time: {}\n
+            let output = format!("
+            Dutch time: {}\n
             Irish time: {}\n
-            Time till Ireland: {} Days, {} Hours and {} Minutes\n
+            Time till Ireland: {} Days, {} Hours, {} Minutes and {:.2} seconds\n
             Message: {}\n", 
-            dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, message_cache);
+            dt_format, dt_ie_format, duration_days, duration_correct_hours, duration_correct_minutes, duration_correct_seconds, message_cache,);
             output
         }
 }
